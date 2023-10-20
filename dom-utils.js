@@ -81,6 +81,10 @@ const createDetailElement = (country) => {
     );
 
     detailContentElement.appendChild(
+        createInfoElement("Area", country.area + " km")
+    );
+
+    detailContentElement.appendChild(
         createInfoElement("Region", country.region)
     );
 

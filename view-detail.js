@@ -25,6 +25,7 @@ export const renderDetail = () => {
                 nativeName: Object.values(country.name.nativeName)[0].official,
                 code: country.ccn3,
                 region: country.region,
+                area: country.area.toLocaleString(),
                 subregion: country.subregion,
                 flagUrl: country.flags.png,
                 currencies: Object.values(country.currencies)
