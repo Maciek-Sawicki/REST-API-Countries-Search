@@ -184,6 +184,10 @@ li img {
     justify-content: flex-end;
 }
 
+span {
+    text-align: right;
+}
+
 @media only screen and (max-width: 1440px) {
     ul {
         grid-template-columns: 1fr 1fr 1fr;
