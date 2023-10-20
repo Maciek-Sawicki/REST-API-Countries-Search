@@ -12,6 +12,7 @@ export const renderDashboard = () => {
     fetch(API_URL_ALL)
         .then(response => response.json())
         .then((countriesRaw) => {
+            //console.log(countriesRaw);
             countries = countriesRaw.map((country) => {
                 return {
                     capital: country.capital && country.capital[0],

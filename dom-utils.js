@@ -70,6 +70,7 @@ const createDetailElement = (country) => {
 
     detailContainerElement.appendChild(flagImgElement);
     detailContentElement.appendChild(detailNameElement);
+    detailContentElement.classList.add("content-element");
 
     detailContentElement.appendChild(
         createInfoElement("Native name", country.nativeName)
@@ -124,16 +125,19 @@ const createDetailButton = (text, link) => {
 
 
 const createBorderCountriesContainer = (country) => {
+    console.log(country);
     const borderCountriesContainerElement = document.createElement("div");
+    borderCountriesContainerElement.classList.add("border-container");
+    const borderCountriesContainer = document.createElement("div");
 
     const labelElement = document.createElement("strong");
     labelElement.innerText = "Border Countries:";
 
     borderCountriesContainerElement.appendChild(labelElement);
+    borderCountriesContainerElement.appendChild(borderCountriesContainer);
 
-    console.log("aa");
     country.borders.forEach((border) => {
-        borderCountriesContainerElement.appendChild(
+        borderCountriesContainer.appendChild(
             createDetailButton(border, `/?country=${border}`)
         );
     });
