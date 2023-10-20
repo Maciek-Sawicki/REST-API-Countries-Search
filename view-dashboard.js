@@ -1,5 +1,5 @@
 import {
-    renderCountriesList
+    renderCountriesList,
 } from "./dom-utils.js";
 
 export const renderDashboard = () => {
@@ -46,5 +46,4 @@ export const renderDashboard = () => {
         region = e.target.value;
         filterDataAndRednerCountriesList();
     });
-
 }

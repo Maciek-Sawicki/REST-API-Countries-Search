@@ -123,7 +123,6 @@ const createDetailButton = (text, link) => {
     return anchorElement;
 }
 
-
 const createBorderCountriesContainer = (country) => {
     console.log(country);
     const borderCountriesContainerElement = document.createElement("div");
@@ -144,8 +143,6 @@ const createBorderCountriesContainer = (country) => {
 
     return borderCountriesContainerElement;
 };
-
-
 
 export const renderCountriesList = (countries) => {
     const rootElement = document.querySelector("#root");
